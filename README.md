@@ -1,3 +1,3 @@
 ta-bum.css
 ========
-Becouse h5bp is to hot. *ta bum tss*
+Becouse h5bp is too hot. *ta bum tss*
