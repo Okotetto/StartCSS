@@ -1,4 +1,3 @@
-StartCSS
+ta-bum.css
 ========
-
-start css
+Becouse h5bp is to hot. *ta bum tss*
