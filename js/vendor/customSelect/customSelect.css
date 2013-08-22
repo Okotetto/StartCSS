@@ -1,0 +1,20 @@
+.customSelect { 
+/* This is the default class that is used */
+/* Put whatever custom styles you want here */
+}
+
+.customSelect.customSelectHover {
+/* Styles for when the select box is hovered */
+}
+
+.customSelect.customSelectOpen {
+/* Styles for when the select box is open */
+}
+
+.customSelect.customSelectFocus {
+/* Styles for when the select box is in focus */
+}
+
+.customSelectInner {
+/* You can style the inner box too */
+}
