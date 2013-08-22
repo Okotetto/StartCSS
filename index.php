@@ -55,15 +55,6 @@
 
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
-		
-		<script>
-			var _gaq = [['_setAccount', 'UA-#####-#'], ['_trackPageview']];
-
-			(function() {
-				var ga = document.createElement('script'); ga.async = true;
-				ga.src = '//google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
+		<script src="js/ga.js" async></script>
 	</body>
 </html>
