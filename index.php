@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pl"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pl"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pl"> <!--<![endif]-->
 	<head>
 		<!--META-->
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<base href="http://eodczyt/html/">
+		<title>Page title</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
 
 		<!--SEO-->
 		<meta name="description" content="#">
 		<meta name="keywords" content="#">
 		<link rel="canonical" href="#">
 		<meta name="google-site-verification" content="#">
-
-		<title>Page title</title>
 
 		<!-- Reset and predefined helpers -->
 		<link rel="stylesheet" href="css/main.css">
@@ -27,12 +25,7 @@
 
 	<?php
 		$entryPopup = false;
-
-		if(!empty($_GET['pageName'])){
-			$file = $_GET['pageName'];
-		} else {
-			$file = 'home';
-		}
+		$file = !empty($_GET['pageName']) ? $_GET['pageName'] : 'home';
 
 		switch($file) {
 			case 'popup':
@@ -54,7 +47,7 @@
 		?>
 
 		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery.js"><\/script>')</script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery.1.10.2.js"><\/script>')</script>
 
 		<?php if ( $googleMapsRequire ): ?>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
@@ -64,13 +57,11 @@
 		<script src="js/main.js"></script>
 		
 		<script>
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-#####-#']);
-			_gaq.push(['_trackPageview']);
+			var _gaq = [['_setAccount', 'UA-#####-#'], ['_trackPageview']];
 
 			(function() {
 				var ga = document.createElement('script'); ga.async = true;
-				ga.src = 'http://google-analytics.com/ga.js';
+				ga.src = '//google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 		</script>
