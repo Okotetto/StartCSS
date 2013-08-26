@@ -173,9 +173,10 @@ audio:not([controls]) {
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
-
+[aria-hidden],
 [hidden] {
-    display: none;
+    display: none !important;
+    visibility: hidden;
 }
 
 /* ==========================================================================
@@ -596,15 +597,6 @@ textarea {
     display: block;
     width: 0;
     height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
 }
 
 /*
