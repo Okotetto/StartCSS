@@ -173,7 +173,7 @@ audio:not([controls]) {
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
-[aria-hidden],
+[aria-hidden="true"],
 [hidden] {
     display: none !important;
     visibility: hidden;
